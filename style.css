@@ -79,14 +79,15 @@ a:hover {
   opacity: 1;
   margin: -13px 16px;
   line-height: 0.25em;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #CB4EA6;
   border: none;
   background: none;
   position: fixed;
   top: 0em;
-  left: 0em;
-  padding: 0.5em;
+  /*left: 0em;*/
+  right: 0em;
+  /*padding: 0.5em; */
   z-index: 1;
 }
 
@@ -106,8 +107,9 @@ a:hover {
   background: none;
   position: fixed;
   top: 0.5em;
-  left: 0.5em;
-  font-size: 1.5em;
+  /*left: 0.5em;*/
+  right: 0.5em;
+  font-size: 1.9em;
   padding: 1em;
   cursor: pointer;
   z-index: 3;
@@ -144,7 +146,7 @@ a:hover {
 }
 
 .open .modal {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #17172c 0%, #090a0f 100%);
 }
 
 .modal__content {
@@ -1968,7 +1970,7 @@ a:hover {
   margin-bottom: 2%;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 3px #e75151;
+  -webkit-text-stroke: 3px #CB4EA6;
 }
 
 .text::before {
@@ -1976,7 +1978,7 @@ a:hover {
   position: absolute;
   width: 0;
   height: 100%;
-  color: #e75151;
+  color: #CB4EA6;
   -webkit-text-stroke: 0px transparent;
   overflow: hidden;
   transition: width 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1989,10 +1991,58 @@ a{
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .text{
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 2rem;
   }
+  #menu{
+    right: 2.5rem;
+  }
+  #x-btn {
+    right: 2.6rem;
+  }
+  body{
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 730px) and (max-width: 2550px) {
+ #menu{
+   right: 3rem;
+ }
+ #x-btn {
+  right: 3rem;
+ }
+ body{
+   overflow: hidden;
+ }
+}
+
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:landscape) 
+{
+    /* iPad landscape style here */
+    #menu{
+      right: 6rem;
+    }
+    #x-btn {
+     right: 6rem;
+    }  
+}
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    /* iPad portrait style here */
+    #menu{
+      right: 6rem;
+    }
+    #x-btn {
+     right: 6rem;
+    } 
 }
